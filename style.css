@@ -29,7 +29,7 @@ nav a{
 }
 .banner{
     height: 100vh;
-    background-image: url('b2.jpg');
+    background-image: url('images/b2.jpg');
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,4 +165,5 @@ nav a{
 }
 .explore button{
     background-color: green;
+
 }

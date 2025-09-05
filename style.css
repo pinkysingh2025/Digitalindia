@@ -7,7 +7,6 @@ body{
     justify-content: space-evenly;
     background-color: beige;
     width: 100%;
-    border-radius: 50px;
     border: 1px solid black;
     margin: auto;
     margin-top: 2%;
@@ -29,7 +28,8 @@ nav a{
 }
 .banner{
     height: 100vh;
-    background-image: url('b2.jpg');
+    width: 100%;
+    background-image: url('back.jpg');
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,7 +41,6 @@ nav a{
 
 .b1{
     margin: auto;
-    background-color: white;
     border-radius: 5%;
     
     
@@ -165,6 +164,4 @@ nav a{
 }
 .explore button{
     background-color: green;
-
 }
-

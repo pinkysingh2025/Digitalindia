@@ -2,6 +2,9 @@ body{
     padding: 0px;
     margin: 0px;
 }
+html {
+  scroll-behavior: smooth;
+}
 .container{
     display: flex;
     justify-content: space-evenly;
@@ -17,6 +20,7 @@ nav{
     
     margin: 10px;
     padding: 10px;
+     scroll-behavior: smooth;
     
 }
 nav a{
@@ -25,16 +29,17 @@ nav a{
     font-size: 18px;
     margin: 10px;
     padding: 10px;
+   
 }
 .banner{
     height: 100vh;
     width: 100%;
-    background-image: url('back.jpg');
+    background-image: url('images/back.jpg');
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    color: orange;
+    color: white;
     
    
 }
@@ -42,6 +47,7 @@ nav a{
 .b1{
     margin: auto;
     border-radius: 5%;
+    text-align: center;
     
     
 }
@@ -49,27 +55,40 @@ nav a{
 
 .vision{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+
 }
 
 .v1{
     width: 50%;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 20px;
 }
 .v2{
-    width: 50%;
+   width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
 .vision2{
-    display: flex;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    
     
 }
 .v3{
-    width: 50%;
-    left: 10%;
+   width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
 .v4{
@@ -78,7 +97,15 @@ nav a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 20px;
+    
 }
+
+.v2 img, .v3 img {
+    width: 70%;
+    height: auto;
+}
+
 .initiative{
     display: flex;
     align-items: center;
@@ -86,37 +113,49 @@ nav a{
 }
 .int1{
     width: 20%;
-    height: 400px;
+    height: auto;
     border-radius: 8%;
     box-shadow: 5px 5px 5px gray;
     margin: 5%;
     padding: 5%;
+    transition: transform 0.3s ease;
+}
+.int1:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 .int2{
     width: 20%;
-    height: 400px;
+    height: auto;
     border-radius: 8%;
     box-shadow: 5px 5px 5px gray;
     margin: 5%;
     padding: 5%;
+     transition: transform 0.3s ease;
+}
+.int2:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .int3{
     width: 20%;
-    height: 400px;
+    height: auto;
     border-radius: 8%;
     box-shadow: 5px 5px 5px gray;
     margin: 5%;
     padding: 5%;
+     transition: transform 0.3s ease;
 }
 
 .int4{
     width: 20%;
-    height: 400px;
+    height: auto;
     border-radius: 8%;
     box-shadow: 5px 5px 5px gray;
     margin: 5%;
     padding: 5%;
+     transition: transform 0.3s ease;
 }
 .btn button{
     background-color: orange;
@@ -135,24 +174,38 @@ nav a{
     text-align: center;
 }
 .slider{
-    display: flex;
-    overflow: hidden;
+    width: 300%;
+    height: 600px;
+
     
 }
 .slide{
-    width: 100%;
-    height: auto;
+    width: 33%;
+    height: 100%;
     position: relative;
     animation: ad 5s  infinite ease-in-out;
 }
 
-@keyframes ad{
+/* @keyframes ad{ 
     0%{left: 0%;}
     20%{left: 0%;}
     40%{left: -100%;}
     60%{left: -100%;}
     80%{left: -200%;}
     100%{left: -200%;}
+}*/
+
+@keyframes ad{
+    10%{left: 0%;}
+    20%{left: -33%;}
+    40%{left: -33%;}
+
+    60%{left: -66%;}
+    80%{left: -66%;}
+
+    
+
+    
 }
 
 .news{
@@ -164,4 +217,11 @@ nav a{
 }
 .explore button{
     background-color: green;
+}
+.new{
+    transition: transform 0.3s ease;
+}
+.new:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
